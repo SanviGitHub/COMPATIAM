@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Compatibilidad Amorosa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Compatibilidad Amorosa</h1>
+        <form id="compatibilityForm">
+            <div class="input-group">
+                <label for="name1">Nombre de la Persona 1:</label>
+                <input type="text" id="name1" name="name1" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="name2">Nombre de la Persona 2:</label>
+                <input type="text" id="name2" name="name2" class="input-field" required>
+            </div>
+            <input type="submit" value="Calcular Compatibilidad" class="submit-btn">
+            <button id="resetBtn" class="reset-btn">Reset</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Resultado de Compatibilidad</h2>
+            <p id="compatibilityText">La compatibilidad entre <span id="names"></span> es del <span id="compatibilityScore"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
